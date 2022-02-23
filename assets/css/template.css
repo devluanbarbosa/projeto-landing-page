@@ -16,7 +16,11 @@ body {
     background: #fff;
 }
 
-/* HEADER */
+div {
+    display: block;
+}
+
+/* Header */
 header {
     display: flex;
     justify-content: center;
@@ -33,11 +37,15 @@ header {
     display: flex;
     justify-content: space-between;
     width: 850px;
-
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-/* HEADER */
-/* MENU */
+/* Header */
+
+/* Menu */
 .logo img {
     max-width: 300px;
     width: auto;
@@ -81,8 +89,9 @@ nav a:hover {
     margin-top: -6px;
 }
 
-/* MENU */
-/* BANNER */
+/* Menu */
+
+/* Banner */
 #banner {
     display: flex;
     justify-content: end;
@@ -116,26 +125,31 @@ nav a:hover {
     color: #945002;
     text-decoration: none;
 }
+
 .whatsapp {
     margin-top: -15px;
     transition: transform 1s;
     transform: translateX(0) scale(0.5);
 }
+
 .whatsapp:hover {
     transform: translateX(10px) scale(1.0);
 }
+
 .truck {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 25px ;
+    margin-top: 25px;
     padding-right: 15px;
     transition: transform 1s;
     transform: translateX(0) scale(1.0);
 }
+
 .telefone {
     font-size: 35px;
 }
+
 a:hover {
     text-decoration: none;
 }
@@ -145,8 +159,204 @@ a:hover {
     list-style: none;
     margin-left: 50px;
 }
+
 .banner_buttons ul {
     display: flex;
 }
 
-/* BANNER */
+/* Banner */
+
+/* Sobre */
+.about {
+    margin: 0 auto;
+    background-image: url("../img/bg-about.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+h2 {
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: #f6f5dc;
+    max-width: 700px;
+    font-size: 26px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.h2, h2 {
+    font-size: 30px;
+}
+.lead {
+    line-height: 180%;
+    max-width: 830px;
+    color: #f6f5dc;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+
+
+/* Sobre */
+
+/* Produtos */
+.products {
+    color: #f6f5dc;
+}
+
+.bg-products {
+    background-position: 0% 57.7969px;
+    background-image: url("../img/bg-products.jpg");
+    background-size: cover;
+    background-attachment: 100%;
+    width: 100%;
+}
+
+.large-padding-v {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.products .heading {
+    font-size: 30px;
+    max-width: 700px;
+    text-align: center;
+    line-height: 1.5;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    float: none !important;
+    position: relative;
+}
+
+h3.heading {
+    color: #688c34;
+    font-weight: bold;
+}
+
+.heading {
+    margin-bottom: 45px;
+    text-transform: uppercase;
+}
+
+h3 {
+    display: block;
+    letter-spacing: 1px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.products-text p{
+    font-family: Tahoma, sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.8;
+    text-shadow: 1px 1 px 2px rgb(0 0 0 / 48%);
+}
+.pattern {
+    height: 60px;
+    background-image: url("../img/bg-pattern.png");
+    border-bottom: 2px solid rgba(8, 8, 8, 0.28);
+}
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/* Margens e Gerais */
+.large-margin-bottom {
+    margin-bottom: 60px;
+}
+.padding {
+    padding: 18px !important;
+}
+.xlarge-padding-v {
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+.no-padding {
+    padding: 0px !important;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.no-margin-top {
+    margin-top: 0x !important;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0px !important;
+}
+
+.max-margin-top {
+    margin-top: 27px !important;
+}
+
+.max-margin-bottom {
+    margin-bottom: 27px !important;
+}
+
+.margin-right {
+    margin-right: 18px !important;
+}
+
+.margin-left {
+    margin-left: 18px !important;
+}
+.margin-bottom {
+    margin-bottom: 18px !important;
+}
+.margin-h {
+    margin-left: 18px;
+    margin-right: 18px;
+}
+.no-margin {
+    margin: 0px !important;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.col-produtos h3 {
+    font-size: 14px;
+}
+
+.i-box {
+    text-align: center;
+}
+
+.col-xs-6 {
+    width: 50%;
+}
+
+.col-md-1,
+.col-sm-3,
+.col-xs-6 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+/* Margens e Gerais */
