@@ -44,17 +44,20 @@ header {
     height: 120px;
     margin-top: -20px;
 }
+
 .menu {
     display: flex;
     align-items: center;
     text-align: right;
 }
+
 nav ul,
 nav li {
     list-style: none;
     margin: 0;
     padding: 0;
 }
+
 nav ul {
     display: flex;
 }
@@ -72,6 +75,7 @@ nav a:hover {
     background-color: #FAA61A;
     color: #ffffff;
 }
+
 .social_icons a {
     display: flex;
     margin-top: -6px;
@@ -111,16 +115,38 @@ nav a:hover {
     display: flex;
     color: #945002;
     text-decoration: none;
-    justify-content: center;
-
 }
-
+.whatsapp {
+    margin-top: -15px;
+    transition: transform 1s;
+    transform: translateX(0) scale(0.5);
+}
+.whatsapp:hover {
+    transform: translateX(10px) scale(1.0);
+}
+.truck {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px ;
+    padding-right: 15px;
+    transition: transform 1s;
+    transform: translateX(0) scale(1.0);
+}
+.telefone {
+    font-size: 35px;
+}
 a:hover {
     text-decoration: none;
 }
+
 .banner_buttons ul,
 .banner_buttons li {
     list-style: none;
+    margin-left: 50px;
+}
+.banner_buttons ul {
+    display: flex;
 }
 
 /* BANNER */
