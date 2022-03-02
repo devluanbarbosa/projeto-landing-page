@@ -9,13 +9,6 @@ $("a.scroll").on('click', function (event) {
         });
     }
 });
-
-var btn = ("#back-to-top");
-
-btn.click(function() {
-    $('html, body').animate({scrollTop:0}, 'slow');
-})
-
 // $(document).ready(function () {
 //     // $(".back-to-top").css("display", "none");
 //     console.log($(this).scrollTop());
