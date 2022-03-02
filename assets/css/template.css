@@ -24,7 +24,6 @@ div {
 header {
     display: flex;
     justify-content: center;
-
     height: 90px;
     background-color: rgba(255, 255, 255, 0.795);
 }
@@ -174,6 +173,7 @@ a:hover {
     background-size: cover;
     background-attachment: fixed;
 }
+
 h2 {
     display: block;
     margin-block-start: 0.83em;
@@ -187,9 +187,11 @@ h2 {
     text-align: center;
 }
 
-.h2, h2 {
+.h2,
+h2 {
     font-size: 30px;
 }
+
 .lead {
     line-height: 180%;
     max-width: 830px;
@@ -249,18 +251,21 @@ h3 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-.products-text p{
+
+.products-text p {
     font-family: Tahoma, sans-serif;
     font-style: italic;
     font-size: 16px;
     line-height: 1.8;
     text-shadow: 1px 1 px 2px rgb(0 0 0 / 48%);
 }
+
 .pattern {
     height: 60px;
     background-image: url("../img/bg-pattern.png");
     border-bottom: 2px solid rgba(8, 8, 8, 0.28);
 }
+
 #icones-produtos {
     display: flex;
     justify-content: center;
@@ -271,55 +276,72 @@ h3 {
 footer {
     background-color: #505637;
 }
-footer, footer a, footer p,
-footer address, footer h4 {
+
+footer,
+footer a,
+footer p,
+footer address,
+footer h4 {
     color: #f6f5dc;
 }
+
 footer .contact {
     font-size: 20px !important;
 }
+
 .wrapper-address {
     font-family: Tahoma, sans-serif;
     font-style: italic;
     font-size: 18px;
     padding-bottom: 30px;
 }
+
 address {
     line-height: 30px;
 }
+
 div.address {
     margin-bottom: 30px;
 }
+
 h4 {
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 135%;
 }
-a, a:hover {
+
+a,
+a:hover {
     text-decoration: none;
 }
+
 div.address address {
     margin-bottom: 3px;
     display: block;
-    
+
 }
+
 .wrapper-address a.email {
     color: #fff;
 }
+
 footer .block-2 {
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
 }
+
 footer .copyright p {
     margin: 30px 0 30px 0;
-    color: rgba(255,255,255,0.25);
+    color: rgba(255, 255, 255, 0.25);
     text-shadow: 1px 1px 1px rgb(0 0 0 / 10%);
     font-family: Tahoma, sans-serif;
     font-style: italic;
     font-size: 16px;
 }
+
 iframe {
     border-radius: 10px;
 }
+
 /* Footer */
 
 /* Back to Top */
@@ -327,22 +349,23 @@ iframe {
 .back-to-top {
     background-color: #548D27;
     border-radius: 65px;
-    bottom: 14px;
+    bottom: 25px;
     box-shadow: 2px 3px 19px -2px rgba(0, 0, 0, .75);
     color: #fae41a;
     cursor: pointer;
     height: 40px;
     position: fixed;
-    right: 22px;
+    right: 30px;
     width: 40px;
     z-index: 3;
 }
+
 .back-to-top::after {
-	content: '▲';
-	display: flex;
-	justify-content: center;
-	padding-left: 1px;
-	padding-top: 10px;
+    content: '▲';
+    display: flex;
+    justify-content: center;
+    padding-left: 1px;
+    padding-top: 10px;
 }
 
 /* Back to Top */
@@ -354,32 +377,41 @@ iframe {
     margin-right: auto;
     margin-left: auto;
 }
+
 .large-paddint-top {
     padding-top: 60px;
 }
+
 .large-margin-bottom {
     margin-bottom: 60px;
 }
+
 .padding {
     padding: 18px !important;
 }
+
 .padding-bottom {
     padding-bottom: 18px !important;
 }
+
 .xlarge-padding-v {
     padding-top: 65px;
     padding-bottom: 65px;
 }
+
 .xlarge-margin-v {
     margin-top: 65px;
     margin-bottom: 65px;
 }
+
 xlarge-margin-top {
     margin-top: 65px;
 }
+
 .no-padding {
     padding: 0px !important;
 }
+
 h4 {
     display: block;
     margin-block-start: 1.33em;
@@ -387,6 +419,7 @@ h4 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
+
 p {
     display: block;
     margin-block-start: 1em;
@@ -394,6 +427,7 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
+
 .no-margin-top {
     margin-top: 0x !important;
 }
@@ -405,6 +439,7 @@ p {
 .max-padding-top {
     padding-top: 27px !important;
 }
+
 .max-margin-top {
     margin-top: 27px !important;
 }
@@ -420,16 +455,20 @@ p {
 .margin-left {
     margin-left: 18px !important;
 }
+
 .margin-bottom {
     margin-bottom: 18px !important;
 }
+
 .margin-top {
     margin-top: 18px !important;
 }
+
 .margin-h {
     margin-left: 18px;
     margin-right: 18px;
 }
+
 .no-margin {
     margin: 0px !important;
 }
@@ -442,9 +481,11 @@ p {
 .text-center {
     text-align: center;
 }
+
 .text-left {
     text-align: left;
 }
+
 .text-right {
     text-align: right;
 }
@@ -474,4 +515,5 @@ img {
     padding-right: 15px;
     padding-left: 15px;
 }
+
 /* Margens e Gerais */
