@@ -9,21 +9,16 @@ $("a.scroll").on('click', function (event) {
         });
     }
 });
-// $(document).ready(function () {
-//     // $(".back-to-top").css("display", "none");
-//     console.log($(this).scrollTop());
 
-//     $("body").scroll(function() {
-//         console.log($(this).scrollTop());
+window.onscroll = function(){
+    scroll();
+}
 
-//             if($(this).scrollTop() >= 0){
-//                 $(".back-to-top").css("display", "block");
-//             }
-//             if($(this).scrollTop() == 0){
-//                 $(".back-to-top").css("display", "none");
-//             }
-//     });
-//     $(".back-to-top").click(function() {
-//         $("html, body").animate({scrollTop: 0}, 200);
-//         });
-// });
+function scroll(){
+    var btn = document.getElementById("btnTop");
+    if(document.documentElement.scrollTop > 400) {
+        btn.style.display = "block";
+    } else {
+        btn.style.display = "none";
+    }
+}

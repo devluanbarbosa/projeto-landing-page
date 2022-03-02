@@ -358,6 +358,7 @@ iframe {
     right: 30px;
     width: 40px;
     z-index: 3;
+    display: none;
 }
 
 .back-to-top::after {
