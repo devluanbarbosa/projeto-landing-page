@@ -17,23 +17,23 @@
     <header>
         <nav class="navbar">
             <div class="container">
-                <div class="logo">
+                <div id="home" class="logo">
                     <a href=""> <img src="./assets/img/hortlogo.png" /></a>
                 </div>
                 <div class="menu">
                     <nav>
                         <ul>
                             <li class="active">
-                                <a href=""><i class="fas fa-home"></i> Home</a>
+                                <a class="scrol" href="#home"><i class="fas fa-home"></i> Home</a>
                             </li>
                             <li>
                                 <a class="scrol" href="#about">Hort +</a>
                             </li>
                             <li>
-                                <a class="scrol" href="#services">Produtos</a>
+                                <a class="scrol" href="#produtos">Produtos</a>
                             </li>
                             <li>
-                                <a class="scrol" href="#clients">Contato</a>
+                                <a class="scrol" href="#contato">Contato</a>
                             </li>
                             <ul>
                                 <li class="social_icons">
@@ -69,15 +69,22 @@
         </div>
     </section>
     <div class="content">
-        <div class="content-wrap no-padding">
+        <div id="about" class="content-wrap no-padding">
             <section class="about no-padding" data-stellar-background-ratio="0.2" style="background-position: 0%;">
                 <div class="container-fluid xlarge-padding-v description">
                     <div class="a-hortmais container">
-                        <div id="hortmais" style="padding-top: 150px;">
-                            <h2 class="hortmais-text lead text-center large-margin-bottom">Somos a Hort +</h2>
-                            <p class="hortmais-text lead text-center large-margin-bottom">
-                                Somos uma empresa de hortifruti carioca, e acreditamos que a maior beleza está naquilo que é natural, simples e espontâneo, seja nas coisas, na natureza e nas pessoas.  Buscamos promover uma relação de valorização com a comida de verdade, inspirando a voltar às origens para resgatar bons hábitos de alimentação. Valorizamos o que vem da terra, com sabores genuínos: os alimentos frescos, bonitos e principalmente gostosos. Queremos estimular o preparo da nossa comida em casa, de comermos em família e com amigos.
-									Sentimos grande alegria em cuidar e servir, por isso trazemos os melhores produtos de todo Brasil para você.
+                        <div id="hortmais" style="padding-top: 20px;">
+                            <h2 class="hortmais-text lead text-center margin-bottom">Somos a Hort +</h2>
+                            <p class="hortmais-text lead text-center margin-bottom">
+                                Somos uma empresa de hortifruti mineira, e acreditamos que a maior beleza 
+                                está naquilo que é natural, simples e espontâneo, seja nas coisas, 
+                                na natureza e nas pessoas. Buscamos promover uma relação de valorização com 
+                                a comida de verdade, inspirando a voltar às origens para resgatar bons hábitos 
+                                de alimentação. Valorizamos o que vem da terra, com sabores genuínos: 
+                                os alimentos frescos, bonitos e principalmente gostosos. 
+                                Queremos estimular o preparo da nossa comida em casa, de comermos em família e 
+                                com amigos. Sentimos grande alegria em cuidar e servir, por isso trazemos os 
+                                melhores produtos de todo Brasil para você.
                             </p>
                         </div>
                     </div>
@@ -90,8 +97,9 @@
         <section id="produtos" class="products">
             <div class="bg-products">
                 <div class="container clearfix large-padding-v">
-                    <h3 class="heading text-center no-margin-top">Nossos Produtos</h3>
-                    <div class="row max-margin-top text-center">
+                    <h3 id="product" class="heading text-center no-margin-top">Nossos Produtos</h3>
+                </div>
+                    <div id="icones-produtos" class="row max-margin-top text-center">
                         <div class="col-sx-6 col-sm-3 col-md-1 col-produtos max-margin-bottom i-box">
                             <div>
                                 <div class="no-margin-bottom">
@@ -158,9 +166,8 @@
                             <p>
                                 Venha visitar nossa loja, e conhecer a variedade dos produtos que 
                                 preparamos para você. Nossas frutas, verduras e legumes são dos melhores 
-                                fornecedores do país. Temos a linha de processados 
-                                que facilitam seu dia a dia,e ainda água de coco e sucos especialmente 
-                                preparados em nossa loja.Será um prazer te servir.										
+                                fornecedores da região. Temos a linha de processados 
+                                que facilitam seu dia a dia. Será um prazer te servir.										
                             </p>
                         </div>
                     </div>
@@ -168,7 +175,61 @@
             </div>
         </section>
         <div class="pattern container-fluid no-margin"></div>
-    </div>
+        <footer role="contentinfo">
+            <div id="contato" class="contact">
+                <div class="container-fluid large-padding-top block-1">
+                    <div class="container text-left margin-bottom">
+                        <div class="row">
+                            <div id="dados-contato" class="col-md-6 text-left">
+                                <div class="wrapper-address" xlarge-margin-v"">
+                                    <div class="address">
+                                        <div>
+                                            <h3 class="contact heading text-left no-margin-top margin-bottom">Hort +</h3>
+                                        </div>
+                                        <address>
+                                            <a href="https://goo.gl/maps/sK5Zy8stNC62Er8LA" target="_blank">
+                                                Av. Zezé Amaral, 454, Verona
+                                                <br/>
+                                                São Sebastião do Paraíso - MG
+                                            </a>
+                                        </address>
+                                    </div>
+                                    <div class="delivery">
+                                        <a href="https://api.whatsapp.com/send?phone=553535312525&text=Ol%C3%A1%20Hortmais%2C%20gostaria%20de%20fazer%20um%20pedido%3A" class="phone">+55 35 3531-2525
+                                            <small>(WhatsApp)</small>
+                                        </a>
+                                    </div>
+                                </div>
+                                <br/>
+                                <a href="malto:contato@hormaisvoce.com.br" class="email">contato@hortmaisvoce.com.br</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <h3 class="contact heading text-left no-margin-top margin-bottom">Onde Estamos</h3>
+                            </div>
+                            <div class>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d931.7882676878762!2d-46.9814978!3d-20.9061604!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b7176d2ae9052b%3A0x1a28ce58c86d815d!2sHort%20Mais!5e0!3m2!1spt-BR!2sbr!4v1646241107815!5m2!1spt-BR!2sbr" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="container-fluid max-padding-top xlarge-margin-top padding-bottom block-2">
+                    <div class="container margin-top">
+                        <div class="col-sm-6 logo">
+                            <div class="text-left">
+                                <img src="./assets/img/hortlogo.png" alt="Ortális Hortifruti">
+                            </div>
+                        </div>
+                        <div class="copyright">
+                            <p class="text-center">Hort+ © 2021 - Todos os direitos reservados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <a class="scrol" href="#home"><div class="back-to-top" href=""></div></a>
 </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets\js\javascript.js"></script>
