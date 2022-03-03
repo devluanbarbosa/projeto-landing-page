@@ -4,10 +4,13 @@ html {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 * {
     font-family: Roboto Slab;
+    scrollbar-width: thin;
+    scrollbar-color: #FAA61A #505637;
 }
 
 body {
@@ -19,6 +22,21 @@ body {
 div {
     display: block;
 }
+
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #505637;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #FAA61A;
+    border-radius: 20px;
+    border: 3px solid #505637;
+}
+
 
 /* Header */
 header {
@@ -82,6 +100,10 @@ nav .active a,
 nav a:hover {
     background-color: #FAA61A;
     color: #ffffff;
+}
+
+nav .container .logo a:hover {
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .social_icons a {
@@ -341,6 +363,10 @@ footer .copyright p {
 iframe {
     border-radius: 10px;
 }
+#social {
+    margin-top: 15px;
+    padding-right: 20px;
+}
 
 /* Footer */
 
@@ -351,7 +377,7 @@ iframe {
     border-radius: 65px;
     bottom: 25px;
     box-shadow: 2px 3px 19px -2px rgba(0, 0, 0, .75);
-    color: #fae41a;
+    color: #FAA61A;
     cursor: pointer;
     height: 40px;
     position: fixed;
@@ -405,7 +431,7 @@ iframe {
     margin-bottom: 65px;
 }
 
-xlarge-margin-top {
+.xlarge-margin-top {
     margin-top: 65px;
 }
 
