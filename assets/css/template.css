@@ -113,6 +113,25 @@ nav .container .logo a:hover {
 
 /* Menu */
 
+/* Menu Mobile */
+
+.menuMobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+.mm_line {
+    height: 5px;
+    background-color: #FAA61A;
+    border-radius: 5px;
+}
+
+/* Menu Mobile */
+
 /* Banner */
 #banner {
     display: flex;
@@ -297,6 +316,8 @@ h3 {
 /* Footer */
 footer {
     background-color: #505637;
+    display: flex;
+    justify-content: center;
 }
 
 footer,
@@ -348,7 +369,13 @@ div.address address {
 }
 
 footer .block-2 {
-    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    border-top: 1px solid #6e7a3e;
+
+    color: #5c5c5c;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
 }
 
 footer .copyright p {
@@ -359,10 +386,14 @@ footer .copyright p {
     font-style: italic;
     font-size: 16px;
 }
+.cont-footer {
+    align-items: center;
+}
 
 iframe {
     border-radius: 10px;
 }
+
 #social {
     margin-top: 15px;
     padding-right: 20px;
@@ -544,3 +575,132 @@ img {
 }
 
 /* Margens e Gerais */
+
+/* Responsive */
+
+@media (max-width:991px) {
+    header .container {
+        flex-direction: row;
+    }
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        max-width: 80%;
+
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+    
+    .lead {
+        display: flex;
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 1.7em;
+    }
+    .banner_headline{
+        font-size: 15px;
+        margin: 30px 30px 0 0;
+    }
+    #banner {
+        background-position: center;
+        height: 250px;
+    }
+    .products-text{
+        display: flex;
+        flex-direction: column;
+    }
+    #icones-produtos {
+        justify-content: baseline;
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+    }
+    .max-margin-top {
+        margin-top: 15px !important;
+    }
+    .large-padding-v {
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+    .xlarge-padding-v {
+        padding-top: 45px;
+        padding-bottom: 65px;
+    }
+    .hortmais-text {
+        font-size: 17px;
+    }
+    .footer_area {
+        padding: 20px;
+        align-items: center;
+    }
+    footer .contact {
+        font-size: 30px !important;
+        text-align: center;
+        
+    }
+    #dados-contato {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .wrapper-address {
+        font-family: Tahoma, sans-serif;
+        font-style: italic;
+        font-size: 25px;
+        text-align: center;
+        align-items: center;
+    }
+    footer {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    footer .block-2 {
+        max-width: 58%;
+    }
+    #social {
+        font-size: 40px;
+        margin-top: 35px;
+        margin-bottom: 25px;
+    }
+    .cont-footer {
+        display: flex;
+        align-items: center;
+    }
+    .back-to-top {
+        right: 295px;
+        bottom: 80px;
+    }
+    iframe {
+        width: 350px;
+        margin-left: -18px !important;
+        
+    }
+    .row {
+        margin-right: 0;
+    }
+    .telefone {
+        font-size: 20px;
+        
+    }
+    .truck {
+        margin-top: 0;
+    }
+    .banner_buttons ul, .banner_buttons li {
+        margin-left: 30px;
+    }
+}
