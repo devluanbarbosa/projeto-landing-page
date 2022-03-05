@@ -165,17 +165,17 @@ nav .container .logo a:hover {
     display: flex;
     color: #945002;
     text-decoration: none;
+    position: relative ;
 }
 
 .whatsapp {
     margin-top: -15px;
-    transition: transform 1s;
     transform: translateX(0) scale(0.5);
 }
 
-.whatsapp:hover {
+/* .whatsapp:hover {
     transform: translateX(10px) scale(1.0);
-}
+} */
 
 .truck {
     display: flex;
@@ -183,8 +183,6 @@ nav .container .logo a:hover {
     align-items: center;
     margin-top: 25px;
     padding-right: 15px;
-    transition: transform 1s;
-    transform: translateX(0) scale(1.0);
 }
 
 .telefone {
@@ -213,6 +211,9 @@ a:hover {
     background-image: url("../img/bg-about.jpg");
     background-size: cover;
     background-attachment: fixed;
+}
+#hortmais {
+    padding-top: 20px;
 }
 
 h2 {
@@ -334,7 +335,6 @@ footer .contact {
 
 .wrapper-address {
     font-family: Tahoma, sans-serif;
-    font-style: italic;
     font-size: 18px;
     padding-bottom: 30px;
 }
@@ -383,7 +383,6 @@ footer .copyright p {
     color: rgba(255, 255, 255, 0.25);
     text-shadow: 1px 1px 1px rgb(0 0 0 / 10%);
     font-family: Tahoma, sans-serif;
-    font-style: italic;
     font-size: 16px;
 }
 .cont-footer {
@@ -578,13 +577,13 @@ img {
 
 /* Responsive */
 
-@media (max-width:991px) {
+@media (max-width:360px) {
     header .container {
         flex-direction: row;
     }
     .container {
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
         max-width: 80%;
 
     }
@@ -596,13 +595,19 @@ img {
         left: 0;
         width: 100%;
         background-color: #fff;
+        margin-top: -15px;
     }
+    .menu {
+        text-align: center;
+        margin-right: 20px;
+        margin-top: -20px;
 
+    }
     .menuMobile {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-
+        margin-left: 150px;
     }
     
     .lead {
@@ -613,12 +618,16 @@ img {
         font-size: 1.7em;
     }
     .banner_headline{
-        font-size: 15px;
-        margin: 30px 30px 0 0;
+        font-size: 20px;
+        margin: 10px 10px 0 0;
     }
+
     #banner {
         background-position: center;
-        height: 250px;
+        height: 350px;
+    }
+    .icons_banner {
+        padding: 0;
     }
     .products-text{
         display: flex;
@@ -641,15 +650,19 @@ img {
         padding-bottom: 65px;
     }
     .hortmais-text {
-        font-size: 17px;
+        font-size: 14px;
     }
     .footer_area {
         padding: 20px;
         align-items: center;
     }
+    #hortmais {
+        padding-top: 0;
+    }
     footer .contact {
-        font-size: 30px !important;
+        font-size: 20px !important;
         text-align: center;
+        max-width: 350px;
         
     }
     #dados-contato {
@@ -657,10 +670,14 @@ img {
         display: flex;
         flex-direction: column;
     }
+    .email {
+        font-size: 18px;
+        text-align: center;
+        align-items: center;
+    }
     .wrapper-address {
         font-family: Tahoma, sans-serif;
-        font-style: italic;
-        font-size: 25px;
+        font-size: 18px;
         text-align: center;
         align-items: center;
     }
@@ -670,7 +687,19 @@ img {
         text-align: center;
     }
     footer .block-2 {
-        max-width: 58%;
+        max-width: 335px;
+        padding-top: 0 !important;
+    }
+    footer .copyright p {
+        margin: 0;
+    }
+    .container-fluid {
+        max-width: 335px ;
+        padding-left: 30px;
+    }
+    
+    .navbar {
+        max-width: 100%;
     }
     #social {
         font-size: 40px;
@@ -682,12 +711,12 @@ img {
         align-items: center;
     }
     .back-to-top {
-        right: 295px;
-        bottom: 80px;
+        right: 10px;
+        bottom: 10px;
     }
     iframe {
-        width: 350px;
-        margin-left: -18px !important;
+        width: 330px;
+        margin-left: -15px !important;
         
     }
     .row {
@@ -697,10 +726,18 @@ img {
         font-size: 20px;
         
     }
+    
     .truck {
-        margin-top: 0;
+        margin-top: 30px;
+    }
+    .whatsapp {
+        margin-top: 0px;
     }
     .banner_buttons ul, .banner_buttons li {
-        margin-left: 30px;
+        margin-left: 28px;
+        /* margin-top: 25px; */
+        flex-wrap: wrap;
+
     }
+
 }
