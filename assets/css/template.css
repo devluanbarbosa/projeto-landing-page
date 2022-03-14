@@ -577,7 +577,7 @@ img {
 
 /* Responsive */
 
-@media (max-width:360px) {
+@media (max-width:420px) {
     header .container {
         flex-direction: row;
     }
@@ -694,7 +694,7 @@ img {
         margin: 0;
     }
     .container-fluid {
-        max-width: 335px ;
+        max-width: 400px ;
         padding-left: 30px;
     }
     
